@@ -1,7 +1,7 @@
 # ShopeEase-Web_Application
 Web based shopping platform<br>
 This is a front-end base application. I took the imagery, product data, font and CSS things from github.<br>
-I followed a tutorial to developed this website.
+I followed a tutorial to developed this website. Since, I follow his structure, I made significant changes to the code he wrote through the help of ai.
 
 # React + Vite
 
