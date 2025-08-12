@@ -1,0 +1,85 @@
+import React from 'react'
+import { Link } from "react-router-dom";
+const subTitle = "Choose Any Products";
+const title = "Buy Everything with Us";
+const btnText = "Get Started Now";
+
+const catagoryList = [
+    {
+        imgUrl: 'src/assets/images/category/01.jpg',
+        imgAlt: 'category rajibraj91 rajibraj',
+        iconName: 'icofont-brand-windows',
+        title: 'DSLR Camera',
+    },
+    {
+        imgUrl: 'src/assets/images/category/02.jpg',
+        imgAlt: 'category rajibraj91 rajibraj',
+        iconName: 'icofont-brand-windows',
+        title: 'Shoes',
+    },
+    {
+        imgUrl: 'src/assets/images/category/03.jpg',
+        imgAlt: 'category rajibraj91 rajibraj',
+        iconName: 'icofont-brand-windows',
+        title: 'Photography',
+    },
+    {
+        imgUrl: 'src/assets/images/category/04.jpg',
+        imgAlt: 'category rajibraj91 rajibraj',
+        iconName: 'icofont-brand-windows',
+        title: 'Formal Dress',
+    },
+    {
+        imgUrl: 'src/assets/images/category/05.jpg',
+        imgAlt: 'category rajibraj91 rajibraj',
+        iconName: 'icofont-brand-windows',
+        title: 'Colorful Bags',
+    },
+    {
+        imgUrl: 'src/assets/images/category/06.jpg',
+        imgAlt: 'category rajibraj91 rajibraj',
+        iconName: 'icofont-brand-windows',
+        title: 'Home Decor',
+    },
+]
+const HomeCatagory = () => {
+    return (
+        <div className='catagory-section style-4 pading -tb'>
+            <div className="container">
+                <div className="section-header text-center">
+                    <span className="subtitle">{subTitle}</span>
+                    <h2>{title}</h2>
+                </div>
+                {/* Section for lower part */}
+                <div className="section-wrapper">
+                    <div className="row g-4 justify-content-center row-cols-md-3 row-cols-sm-2 row-cols-1">
+                        {
+                            catagoryList.map((val, i) => (<div key={i} className="col">
+                                <Link to="/superdeals" className="catagory-item">
+                                    <div className="catagory-inner">
+                                        {/* Image thumbnail */}
+                                        <div className="catagory-thumb">
+                                            <img src={val.imgUrl} alt={val.imgAlt} />
+                                        </div>
+                                        {/* content */}
+                                        <div className="catagory-content">
+                                            <div className="cata-icon">
+                                                <i className={val.iconName}></i>
+                                            </div>
+                                            <Link to="/superdeals"><h6>{val.title}</h6></Link>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>))
+                        }
+                    </div>
+                    <div className='text-center mt-5'>
+                        <Link to="/superdeals" className="lab-btn"><span>{btnText}</span></Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default HomeCatagory

@@ -1,0 +1,13 @@
+.catagory-thumb img {
+  transition: transform 0.3s ease;
+}
+
+.catagory-thumb:hover img {
+  transform: translateY(-10px);
+}
+.catagory-thumb:hover img {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.catagory-thumb {
+  position: relative;
+}
