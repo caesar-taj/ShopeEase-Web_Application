@@ -1,3 +1,8 @@
+# ShopeEase-Web_Application
+Web based shopping platform<br>
+This is a front-end base application. I took the imagery, product data, font and CSS things from github.<br>
+I followed a tutorial to developed this website.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,7 +15,3 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-# ShopeEase-Web_Application
-Web based shopping platform
-c31c4f8e3709845ffcc509fa46666c10da995338
